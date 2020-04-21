@@ -89,10 +89,7 @@ export default function App() {
 
             )
           }
-        >
-
-        </FlatList>
-
+        />
          
       </SafeAreaView>
     </>
