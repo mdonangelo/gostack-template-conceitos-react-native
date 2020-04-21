@@ -32,7 +32,7 @@ export default function App() {
 
     const liked = res.data;
 
-    const addLike = repositories.map(repository => {
+    const newRepo = repositories.map(repository => {
       if(repository.id === id){
         return liked;
       }else{
@@ -40,7 +40,7 @@ export default function App() {
       }
     });
 
-    setRepositories(addLike);
+    setRepositories(newRepo);
   }
 
   return (
@@ -93,7 +93,7 @@ export default function App() {
 
         </FlatList>
 
-        
+         
       </SafeAreaView>
     </>
   );
